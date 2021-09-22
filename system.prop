@@ -58,7 +58,7 @@ qemu.hw.mainkeys=0
 persist.qfp=false
 
 # FM
-ro.fm.transmitter=false
+hw.fm.init=0
 
 # Graphics
 debug.cpurend.vsync=false
