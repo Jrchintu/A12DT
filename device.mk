@@ -388,7 +388,8 @@ PRODUCT_PACKAGES += \
 
 # RIL
 PRODUCT_PACKAGES += \
-    android.hardware.secure_element@1.0 \
+    android.hardware.radio.deprecated@1.0 \
+    android.hardware.radio.deprecated@1.0.vendor \
     librmnetctl \
     libcnefeatureconfig \
     qti-telephony-hidl-wrapper \
