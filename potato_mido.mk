@@ -17,23 +17,17 @@
 # Inherit from those products. Most specific first.
 $(call inherit-product, $(SRC_TARGET_DIR)/product/core_64_bit.mk)
 $(call inherit-product, $(SRC_TARGET_DIR)/product/full_base_telephony.mk)
+$(call inherit-product, $(SRC_TARGET_DIR)/product/product_launched_with_m.mk)
 
 # Inherit from mido device
 $(call inherit-product, device/xiaomi/mido/device.mk)
 
-# Inherit some common CorvusOS stuff.
-$(call inherit-product, vendor/corvus/config/common_full_phone.mk)
-
-# Corvus specific stuff
-#USE_GAPPS=true
-#USE_PROTON=true
-RAVEN_LAIR=Official
-PRODUCT_PROPERTY_OVERRIDES += \
-    ro.corvus.maintainer=Chintu
+# Inherit some common CustomAOSP stuff.
+$(call inherit-product, vendor/potato/config/common_full_phone.mk)
 
 # Device identifier. This must come after all inclusions
 PRODUCT_DEVICE := mido
-PRODUCT_NAME := corvus_mido
+PRODUCT_NAME := potato_mido
 PRODUCT_BRAND := Xiaomi
 PRODUCT_MODEL := Redmi Note 4
 PRODUCT_MANUFACTURER := Xiaomi
