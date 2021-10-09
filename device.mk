@@ -436,11 +436,7 @@ PRODUCT_COPY_FILES += \
 
 # Extra Custom Stuff's
 PRODUCT_PACKAGES += \
-    bromite-webview \
-    Bromite \
-    ExactCalculator \
-    SimpleKeyboard \
-    RemovePackages
+    SimpleKeyboard
 
 # Adb key
 PRODUCT_COPY_FILES += \
