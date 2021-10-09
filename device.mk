@@ -420,6 +420,8 @@ PRODUCT_BOOT_JARS += \
 PRODUCT_PACKAGES += \
     android.hardware.sensors@1.0-impl:64 \
     android.hardware.sensors@1.0-service \
+    android.hardware.sensors@2.1 \
+    android.hardware.sensors@2.0 \
     libsensorndkbridge
 
 # Secure element
