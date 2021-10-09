@@ -364,6 +364,20 @@ $(call inherit-product, external/json-c/Android.configure.mk)
 PRODUCT_PACKAGES += \
     libjson
 
+# Radio
+PRODUCT_PACKAGES += \
+    android.hardware.radio@1.0 \
+    android.hardware.radio@1.1 \
+    android.hardware.radio@1.2 \
+    android.hardware.radio@1.3 \
+    android.hardware.radio@1.4 \
+    android.hardware.radio@1.5 \
+    android.hardware.radio@1.5.vendor \
+    android.hardware.radio.config@1.2 \
+    android.hardware.radio.config@1.2.vendor \
+    android.hardware.radio.deprecated@1.0 \
+    android.hardware.radio.deprecated@1.0.vendor \
+
 # Ramdisk
 PRODUCT_PACKAGES += \
     fstab.qcom \
@@ -388,8 +402,6 @@ PRODUCT_PACKAGES += \
 
 # RIL
 PRODUCT_PACKAGES += \
-    android.hardware.radio.deprecated@1.0 \
-    android.hardware.radio.deprecated@1.0.vendor \
     librmnetctl \
     libcnefeatureconfig \
     qti-telephony-hidl-wrapper \
