@@ -88,6 +88,9 @@ dalvik.vm.dex2oat64.enabled=true
 dalvik.vm.dex2oat-threads=4
 dalvik.vm.image-dex2oat-cpu-set=4,5,6,7
 
+# DHA Tunning
+ro.config.dha_tunnable=1
+
 # Display
 debug.sdm.support_writeback=0
 ro.hardware.egl=adreno
@@ -147,6 +150,10 @@ persist.vendor.ims.disableSigHandler=1
 # Recovery
 persist.vendor.recovery_update=false
 
+# Smoothens UI
+persist.service.lgospd.enable=0
+persist.service.pcsync.enable=0
+
 # Time Services
 persist.backup.ntpServer=0.pool.ntp.org
 
@@ -155,6 +162,9 @@ net.tcp.2g_init_rwnd=10
 
 # Usb
 persist.vendor.usb.config.extra=none
+
+# Venom
+ro.surface_flinger.running_without_sync_framework=true
 
 # Wifi
 wifi.interface=wlan0
