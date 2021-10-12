@@ -78,6 +78,9 @@ persist.camera.gyro.disable=1
 persist.vendor.cne.feature=1
 persist.vendor.mwqem.enable=1
 
+# Disable significant motion sensor
+ro.vendor.sensors.smd=false
+
 # DPM
 persist.vendor.dpm.feature=1
 persist.vendor.dpm.loglevel=0
@@ -90,6 +93,15 @@ dalvik.vm.image-dex2oat-cpu-set=4,5,6,7
 
 # DHA Tunning
 ro.config.dha_tunnable=1
+ro.config.dha_cached_max=16
+ro.config.dha_empty_init=32
+ro.config.dha_empty_max=42
+ro.config.dha_lmk_scale=0.545
+ro.config.dha_th_rate=2.3
+ro.config.fha_enable=true
+ro.config.sdha_apps_bg_max=64
+ro.config.sdha_apps_bg_min=8
+ro.sys.fw.bg_apps_limit=32
 
 # Display
 debug.sdm.support_writeback=0
@@ -106,6 +118,10 @@ persist.vendor.dpmhalservice.enable=1
 
 # DRM
 drm.service.enabled=true
+
+# Fling Velocity
+ro.min.fling_velocity=160
+ro.max.fling_velocity=20000
 
 # Fm
 vendor.hw.fm.init=0
@@ -171,21 +187,3 @@ wifi.interface=wlan0
 
 # Wifi-Display
 persist.sys.wfd.virtual=0
-
-# Fling Velocity
-ro.min.fling_velocity=160
-ro.max.fling_velocity=20000
-
-# Properties
-ro.config.dha_cached_max=16
-ro.config.dha_empty_init=32
-ro.config.dha_empty_max=42
-ro.config.dha_lmk_scale=0.545
-ro.config.dha_th_rate=2.3
-ro.config.fha_enable=true
-ro.config.sdha_apps_bg_max=64
-ro.config.sdha_apps_bg_min=8
-ro.sys.fw.bg_apps_limit=32
-
-# Disable significant motion sensor
-ro.vendor.sensors.smd=false
