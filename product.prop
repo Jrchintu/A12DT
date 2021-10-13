@@ -4,3 +4,6 @@
 
 # Default to BFQ I/O scheduler
 #persist.sys.io.scheduler=bfq
+
+# Radio
+persist.sys.fflag.override.settings_provider_model=false
