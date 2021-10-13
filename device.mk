@@ -393,7 +393,8 @@ PRODUCT_PACKAGES += \
     init.veth_ipa_config.sh \
     ueventd.qcom.rc \
     init.insmod.sh \
-    init.class_main.sh
+    init.class_main.sh \
+    init.safailnet.rc
 
 # RenderScript HAL
 PRODUCT_PACKAGES += \
