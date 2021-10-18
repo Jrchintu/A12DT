@@ -201,6 +201,7 @@ PRODUCT_PACKAGES += \
     memtrack.msm8953 \
     libdisplayconfig \
     libqdMetaData \
+    libsdmutils \
     libtinyxml \
     libtinyxml.vendor \
     libvulkan \
