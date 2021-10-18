@@ -444,7 +444,7 @@ PRODUCT_PACKAGES += \
 PRODUCT_PACKAGES += \
     android.hardware.usb@1.0-service \
     android.hardware.usb.gadget@1.0 \
-    android.hardware.usb@1.0-service.basic
+    android.hardware.usb@1.0-service.mido
 
 # Vibrator
 PRODUCT_PACKAGES += \
