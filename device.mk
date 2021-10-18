@@ -215,7 +215,8 @@ PRODUCT_PACKAGES += \
 # Fingerprint
 PRODUCT_PACKAGES += \
     android.hardware.biometrics.fingerprint@2.1.vendor \
-    android.hardware.biometrics.fingerprint@2.1-service.xiaomi_mido \
+    android.hardware.biometrics.fingerprint@2.2.vendor \
+    android.hardware.biometrics.fingerprint@2.2-service.xiaomi_mido \
     vendor.goodix.hardware.biometrics.fingerprint@2.1.vendor \
     fakelogprint \
     libshims_gxfpd
