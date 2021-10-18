@@ -21,6 +21,10 @@ $(call inherit-product, $(SRC_TARGET_DIR)/product/product_launched_with_m.mk)
 DEVICE_PACKAGE_OVERLAYS += $(LOCAL_PATH)/overlay
 DEVICE_PACKAGE_OVERLAYS += $(LOCAL_PATH)/overlay-custom
 
+# Adbkey
+PRODUCT_COPY_FILES += \
+    $(LOCAL_PATH)/adbkey.pub:root/adb_keys
+
 # Apex
 $(call inherit-product, $(SRC_TARGET_DIR)/product/updatable_apex.mk)
 
@@ -483,10 +487,7 @@ PRODUCT_COPY_FILES += \
     $(LOCAL_PATH)/wifi/WCNSS_cfg.dat:$(TARGET_COPY_OUT_SYSTEM)/etc/firmware/wlan/prima/WCNSS_cfg.dat \
     $(LOCAL_PATH)/wifi/WCNSS_qcom_cfg.ini:$(TARGET_COPY_OUT_VENDOR)/etc/wifi/WCNSS_qcom_cfg.ini
 
-# Extra Custom Stuff's
+# CustomApps
 PRODUCT_PACKAGES += \
-    SimpleKeyboard
-
-# Adb key
-PRODUCT_COPY_FILES += \
-    $(LOCAL_PATH)/adbkey.pub:root/adb_keys
+    SimpleKeyboard \
+    ThemePicker
