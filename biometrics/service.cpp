@@ -29,8 +29,8 @@
 #include <errno.h>
 #include <unistd.h>
 
-using android::hardware::biometrics::fingerprint::V2_2::IBiometricsFingerprint;
-using android::hardware::biometrics::fingerprint::V2_2::implementation::BiometricsFingerprint;
+using android::hardware::biometrics::fingerprint::V2_1::IBiometricsFingerprint;
+using android::hardware::biometrics::fingerprint::V2_1::implementation::BiometricsFingerprint;
 using android::hardware::configureRpcThreadpool;
 using android::hardware::joinRpcThreadpool;
 using android::sp;

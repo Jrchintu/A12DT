@@ -29,13 +29,13 @@ namespace android {
 namespace hardware {
 namespace biometrics {
 namespace fingerprint {
-namespace V2_2 {
+namespace V2_1 {
 namespace implementation {
 
 // Supported fingerprint HAL version
 
 using RequestStatus =
-        android::hardware::biometrics::fingerprint::V2_2::RequestStatus;
+        android::hardware::biometrics::fingerprint::V2_1::RequestStatus;
 
 BiometricsFingerprint *BiometricsFingerprint::sInstance = nullptr;
 
@@ -362,7 +362,7 @@ void BiometricsFingerprint::notify(const fingerprint_msg_t *msg) {
 }
 
 }  // namespace implementation
-}  // namespace V2_2
+}  // namespace V2_1
 }  // namespace fingerprint
 }  // namespace biometrics
 }  // namespace hardware
