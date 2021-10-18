@@ -672,4 +672,7 @@
             2 - Global actions menu
     -->
     <integer name="config_keyChordPowerVolumeUp">1</integer>
+
+    <!-- Perfd Animation Boost -->
+    <bool name="config_enablePerfBoostForAnimation">true</bool>
 </resources>
