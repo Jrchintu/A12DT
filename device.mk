@@ -202,6 +202,7 @@ PRODUCT_PACKAGES += \
     libdisplayconfig \
     libqdMetaData \
     libsdmutils \
+    libsdmutils.vendor \
     libtinyxml \
     libtinyxml.vendor \
     libvulkan \
